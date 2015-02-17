@@ -1,0 +1,26 @@
+
+
+
+
+<div class="form-group">
+  <form action="/places" method="post">
+    <label for="name">Enter the place name</label>
+    <input id="name" name="name" class="form-group" type="text">
+
+    <button type="submit" class="btn btn-success">Add places </button>
+
+  </form>
+</div>
+
+
+<h1>Places Visited </h1>
+
+
+<ul>
+  <% @places.each do |place| %>
+
+  <li> <%= place.name %> </li>
+
+
+  <% end %>
+</ul>
